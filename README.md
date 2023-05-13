@@ -1,4 +1,11 @@
-# Responsive-Web-Design-Course
+# [Responsive-Web-Design-Certifaction](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+
+In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.
+
+First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site.
+
+Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.
+
 ## freeCodeCamp.org Projects;
 ### [Preview for Project-1: CatPhotoApp](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CatPhotoApp.html)
 ### [Preview for Project-2: CafeMenu](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CafeMenu/CafeMenu.html)
