@@ -6,7 +6,7 @@
 
 ## My Result: 
 
-    [Preview Link](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
+[Preview Link](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
 
 ## My Description:
 
