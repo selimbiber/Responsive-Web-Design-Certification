@@ -6,8 +6,11 @@ First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, 
 
 Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.
 
-## freeCodeCamp.org Projects;
-### [Preview for Project-1: CatPhotoApp](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CatPhotoApp.html)
-### [Preview for Project-2: CafeMenu](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CafeMenu/CafeMenu.html)
-### [Preview for Project-3: CSSColorMarkers](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CSSColorMarkers/index.html)
-### [Preview for Project-4: RegistrationForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/RegistrationForm/index.html)
+## freeCodeCamp.org Training Projects;
+### [Preview for Training Project-1: CatPhotoApp](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CatPhotoApp.html)
+### [Preview for Training Project-2: CafeMenu](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CafeMenu/CafeMenu.html)
+### [Preview for Training Project-3: CSSColorMarkers](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CSSColorMarkers/index.html)
+### [Preview for Training Project-4: RegistrationForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/RegistrationForm/index.html)
+
+## freeCodeCamp.org Portfolio Projects;
+### [Preview for Portfolio Project-1: SurveyForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
