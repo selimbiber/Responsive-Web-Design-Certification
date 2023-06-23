@@ -9,9 +9,10 @@ Finally, you'll learn how to make webpages that respond to different screen size
 ## freeCodeCamp.org Training Projects;
 ### [Preview for Training Project-1: CatPhotoApp](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CatPhotoApp.html)
 ### [Preview for Training Project-2: CafeMenu](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CafeMenu/CafeMenu.html)
-### [Preview for Training Project-3: CSSColorMarkers](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CSSColorMarkers/index.html)
+### [Preview for Training Project-3: CSS-Color-Markers](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Course/blob/main/CSSColorMarkers/index.html)
 ### [Preview for Training Project-4: RegistrationForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/RegistrationForm/index.html)
 ### [Preview for Training Project-5: RothkoPainting](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/RothkoPainting/index.html)
+### [Preview for Training Project-6: CSS-Flexbox-Photo-Gallery](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Flexbox-Photo-Gallery/index.html)
 
 ## freeCodeCamp.org Portfolio Projects;
 ### [Preview for Portfolio Project-1: SurveyForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
