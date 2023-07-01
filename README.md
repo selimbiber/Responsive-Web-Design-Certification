@@ -14,6 +14,7 @@ Finally, you'll learn how to make webpages that respond to different screen size
 ### [Preview for Training Project-5: RothkoPainting](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/RothkoPainting/index.html)
 ### [Preview for Training Project-6: CSS-Flexbox-Photo-Gallery](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Flexbox-Photo-Gallery/index.html)
 ### [Preview for Training Project-7: CSS-Typography-Nutrition-Label](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Typography-Nutrition-Label/index.html)
+### [Preview for Training Project-8: CSS-Accessibility-Quiz](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Accessibility-Quiz/index.html)
 
 ## freeCodeCamp.org Portfolio Projects;
 ### [Preview for Portfolio Project-1: SurveyForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
