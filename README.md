@@ -17,6 +17,7 @@ Finally, you'll learn how to make webpages that respond to different screen size
 ### [Preview for Training Project-8: CSS-Accessibility-Quiz](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Accessibility-Quiz/index.html)
 ### [Preview for Training Project-9: Learn More About CSS Pseudo Selectors By Building A Balance Sheet](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/BalanceSheet/index.html)
 ### [Preview for Training Project-10: Learn Intermediate CSS by Building a Picasso Painting](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/PicassoPainting/index.html)
+### [Preview for Training Project-11: Learn Responsive Web Design by Building a Piano](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/Piano/index.html)
 
 ## freeCodeCamp.org Portfolio Projects;
 ### [Preview for Portfolio Project-1: SurveyForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
