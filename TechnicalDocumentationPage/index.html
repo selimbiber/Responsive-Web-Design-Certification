@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="https://cdn-icons-png.flaticon.com/512/3997/3997559.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Technical Documentation Page</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<header class="navbar-headings-area">
+				<h1 class="navbar-top-heading">
+					<a href="https://academy.patika.dev/courses/sql" target="_blank"
+						>SQL Documentation</a
+					>
+				</h1>
+				<h2 class="navbar-sub-heading">Content Navigation List</h2>
+			</header>
+			<ul id="navbar-list">
+				<li>
+					<a href="#SQL_(Structured_Query_Language)_nedir?" class="nav-link"
+						>SQL (Structured Query Language) Nedir?</a
+					>
+				</li>
+				<li>
+					<a href="#Veri_ve_Veritabani_nedir?" class="nav-link"
+						>Veri ve Veritabanı nedir?</a
+					>
+				</li>
+				<li>
+					<a href="#Neden_PostgreSQL?" class="nav-link">Neden PostgreSQL?</a>
+				</li>
+				<li>
+					<a href="#SQL_Temelleri_1" class="nav-link">SQL Temelleri 1</a>
+				</li>
+				<li>
+					<a href="#SQL_Temelleri_2" class="nav-link">SQL Temelleri 2</a>
+				</li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="SQL_(Structured_Query_Language)_nedir?">
+				<header>
+					<h2 class="top-heading">SQL (Structured Query Language) nedir?</h2>
+				</header>
+				<article>
+					<p class="top-item">
+						SQL Türkçe ifadesiyle yapılandırılmış sorgu dili anlamına
+						gelmektedir. Biz SQL sayesinde verilerimizin bulunduğu veritabanı
+						ile iletişime geçeriz.
+					</p>
+					<h3 class="sub-heading" id="SQL_bir_progralama_dili_midir?">
+						SQL bir programlama dili midir?
+					</h3>
+					<p class="sub-item">
+						Evet, SQL ilişkisel veritabanı yönetim sistemleri ile ilişki
+						kurmamızı sağlayan bir declarative bildirimsel bir programlama
+						dilidir.<br /><u>Aşağıdaki örnek bir SQL sorgusudur:</u>
+					</p>
+
+					<p class="code-container">
+						<code
+							>SELECT title FROM book <br />
+							WHERE page_number > 200;</code
+						>
+					</p>
+					<p class="sub-item">
+						Yukarıdaki sorgumuzda, veritabanındaki book tablosundan sayfa sayısı
+						200 den daha fazla olan kitapları görmek istiyoruz. Burada biz işin
+						sonuç kısmıyla ilgileniyoruz. SQL, veritabanı yönetim sistemi ile
+						arka planda nasıl çalıştığının bizim açımızdan önemi yoktur. Bundan
+						dolayı SQL declarative yani bildirimsel, beyan edici bir yaklaşıma
+						sahiptir.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="Veri_ve_Veritabani_nedir?">
+				<header><h2 class="top-heading">Veri ve Veritabanı nedir?</h2></header>
+				<article>
+					<h3 class="sub-heading" id="veri_nedir">Veri nedir?</h3>
+					<p class="sub-item">
+						Ölçüm, sayım, deney, gözlem veya araştırma sonucuyla elde edilen ham
+						bilgilerdir.
+					</p>
+					<h3 class="sub-heading" id="veritabani_nedir">Veritabanı nedir?</h3>
+					<p class="sub-item">
+						Verilerin organize bir şekilde depolanmasını sağlayan sistemlerdir.
+					</p>
+					<h3 class="sub-heading" id="duzenli_verilerin_faydalari_nelerdir">
+						Düzenli verilere sahip olmanın sağlayacağı en temel faydalar
+						nelerdir?
+					</h3>
+					<ul class="sub-item">
+						<li>İleriye yönelik geliştirici kararlar verebiliriz.</li>
+						<li>Hatalarımızı daha kolay çözebiliriz.</li>
+						<li>Geleceğe yönelik başarılı tahminlerde bulunabiliriz.</li>
+					</ul>
+					<h3 class="sub-heading" id="neden_veritabaninina_ihtiyac_duyariz">
+						Excel benzeri yazılımlar sayesinde verilerimizi saklayabilecekken
+						neden veritabanlarına ihtiyaç duyarız?
+					</h3>
+					<ul class="sub-item">
+						<li>
+							Veritabanı sayesinde sütunlarda bulunacak verilerin aynı tipte
+							olmasını garanti ederiz.
+						</li>
+						<li>
+							Veritabanları sayesinde çok büyük boyutlu veri kümeleriyle daha
+							kolay çalışırız.
+						</li>
+						<li>Çoklu kullanıcı yönetimi için veritabanları daha uygundur.</li>
+						<li>
+							Veritabanları başka yazılım ve uygulamalarla daha kolay çalışır.
+						</li>
+					</ul>
+					<h3 class="sub-heading" id="veritabani_ve_e-tablo_farklari">
+						Veritabanı ve elektronik tablo arasındaki fark nedir?
+					</h3>
+					<p class="sub-item">
+						Hem veritabanları hem elektronik tablolar (ör. Microsoft Excel)
+						bilgi depolamak için uygun yöntemlerdir.<u>
+							<br />
+							Aralarındaki temel farklar şu şekilde sıralanabilir:</u
+						>
+					</p>
+					<ul class="sub-item">
+						<b>
+							<li>Veri toplama ve değiştirme yöntemi</li>
+							<li>Verilere erişebilen kişiler</li>
+							<li>Depolanabilecek veri miktarı</li>
+						</b>
+					</ul>
+					<article class="sub-item">
+						<p>
+							Elektronik tablolar orijinal olarak tek kullanıcı için tasarlanmış
+							olup özellikleri bu amacı yansıtmaktadır. Muazzam düzeyde karmaşık
+							veri manipülasyonuna ihtiyaç duymayan tek veya az sayıda kullanıcı
+							için harika bir seçenektir.
+						</p>
+						<p>
+							Diğer yandan veritabanları ise çok daha yüksek miktarda, kimi
+							zaman devasa miktarlarda bilgi koleksiyonlarını barındırmak üzere
+							tasarlanmıştır.
+						</p>
+						<p>
+							Veritabanları, oldukça karmaşık bir mantık ve dil kullanımıyla
+							aynı anda birden fazla kullanıcının hızlı ve güvenli bir şekilde
+							verilere erişmesine ve veri sorgulamasına olanak sağlar.
+						</p>
+					</article>
+					<h3 class="sub-heading" id="veritabanina_iliskin_zorluklar">
+						Veritabanına ilişkin zorluklar nelerdir?
+					</h3>
+					<article class="sub-item">
+						<p>
+							Günümüzün büyük şirket veritabanları genellikle çok karmaşık
+							sorguları destekleyebiliyor ve bu sorgulara neredeyse anında yanıt
+							vermeleri bekleniyor.
+						</p>
+						<p>
+							Sonuç olarak veritabanı yöneticileri sürekli olarak performansı
+							iyileştirmelerine yardımcı olacak çeşitli yöntemleri denemek
+							durumunda kalıyor.
+						</p>
+						<p>
+							Karşı karşıya kaldıkları yaygın zorlukların bazıları şu şekilde
+							sıralanabilir:
+						</p>
+					</article>
+					<ul class="sub-item">
+						<li>
+							<b>Veri hacmindeki önemli artışları özümseme: </b> <br />
+							Sensörlerden, bağlantı hâlindeki makinelerden ve onlarca diğer
+							kaynaklardan gelen veri patlaması veritabanı yöneticilerinin
+							şirketlerinin verileri verimli bir şekilde yönetmek ve organize
+							etmek üzere sürekli olarak mücadele etmesini gerektiriyor.
+						</li>
+						<li>
+							<b>Veri güvenliğini sağlama: </b> <br />
+							Günümüzde her yerde veri ihlali yaşanıyor ve hacker'lar daha
+							yaratıcı hale geliyor. Veri güvenliğinin garanti altına alınması
+							ve aynı zamanda kullanıcıların verilere kolayca erişebilmesi, her
+							zamankinden daha önemli.
+						</li>
+						<li>
+							<b>Talebe ayak uydurmak: </b> <br />
+							Günümüzün hızlı değişen iş ortamında şirketlerin, karar alma
+							süreçlerini zamanında desteklemek ve yeni fırsatlardan yararlanmak
+							için verilere gerçek zamanlı olarak erişebilmesi gereklidir.
+						</li>
+						<li>
+							<b>Veritabanı ve altyapı yönetimi ve bakımı: </b> <br />
+							Veritabanı yöneticileri, sürekli olarak sorunlar açısından
+							veritabanını izlemeli, önleyici bakım işlemleri gerçekleştirmeli
+							ve yazılım yükseltmeleri ve yamaları uygulamalıdır. Veritabanları
+							daha karmaşık hâle geldiğinden ve veri hacimleri arttığından
+							şirketler veritabanlarını izlemek ve ince ayarları uygulamak üzere
+							ek yetenekleri işe alma maliyetleri ile karşı karşıya.
+						</li>
+						<li>
+							<b>Ölçeklenebilirlik sınırlarını kaldırma: </b> <br />
+							İşletme, ayakta kalmak istiyorsa büyümelidir ve onunla birlikte
+							veri yönetimi çözümleri de büyümelidir. Ancak veritabanı
+							yöneticilerinin şirketin ne kadar kapasiteye ihtiyaç duyacağını
+							tahmin etmesi oldukça zordur; özellikle işletme içi veritabanları
+							ile daha da zordur.
+						</li>
+						<li>
+							<b
+								>Veri yerleşimi, veri egemenliği veya gecikme süresi
+								gereksinimlerinin sağlanması:
+							</b>
+							<br />
+							Bazı organizasyonların şirket içinde çalıştırmak için daha uygun
+							kullanım senaryoları vardır. Bu gibi durumlarda, veritabanını
+							çalıştırmak için önceden konfigüre edilmiş ve önceden optimize
+							edilmiş tasarlanmış sistemler idealdir.
+						</li>
+						<b
+							>Tüm bu zorlukların üstesinden gelinmesi zaman alır ve bu durum,
+							veritabanı yöneticilerinin daha stratejik işlevleri
+							gerçekleştirmesini engelleyebilir.</b
+						>
+					</ul>
+					<h3 class="sub-heading" id="otonom_veritabani_teknolojisi">
+						Kendi kendini yöneten veritabanı teknolojisi, veritabanı yönetimini
+						nasıl geliştirir?
+					</h3>
+					<article class="sub-item">
+						<p>Kendi kendini yöneten veritabanları, geleceğin kasırgasıdır;</p>
+						<p>
+							Hiçbir zorluğu ile uğraşmadan en iyi veritabanı teknolojisinden
+							yararlanmak isteyen kurumlar için cazip bir olasılık sunar.
+						</p>
+						<p>
+							Kendi kendini yöneten veritabanları ince ayar, güvenlik,
+							yedekleme, güncelleme ve diğer rutin yönetim görevleri gibi
+							veritabanlarını yönetmek için gereken pek çok rutin görevi
+							otomatikleştirmek üzere makine öğreniminden ve bulut tabanlı
+							teknolojiden yararlanır. Bu el oyalayan görevlerin
+							otomatikleştirilmesiyle veritabanı yöneticileri, daha stratejik
+							çalışmalar gerçekleştirmek üzere zaman ayırabilir.
+						</p>
+						<p>
+							Kendi kendini yöneten veritabanlarının kendi kendini yönetme,
+							kendi kendine güvenlik sağlama ve kendi kendini onarma özellikleri
+							şirketlerin verilere ilişkin güvenlik ve yönetim faaliyetlerini
+							gerçekleştirme yöntemlerinde devrim yaratarak performans
+							avantajları, daha düşük maliyet ve iyileştirilmiş güvenlik
+							olanaklarını sunmaya hazırdır.
+						</p>
+					</article>
+				</article>
+			</section>
+			<section class="main-section" id="Neden_PostgreSQL?">
+				<header><h2 class="top-heading">Neden PostgreSQL?</h2></header>
+				<ul class="sub-item">
+					<li>Açık kaynak kodlu</li>
+					<li>Çeşitli veri tipi desteği</li>
+					<li>Güçlü dökümantasyon ve topluluk desteği</li>
+					<li>Tüm işletim sistemlerine uygunluk</li>
+					<li>ACID uyumluluk</li>
+					<li>Güvenlidir</li>
+					<li>Büyük verilerle kolay çalışma</li>
+				</ul>
+			</section>
+			<section class="main-section" id="SQL_Temelleri_1">
+				<header><h2 class="top-heading">SQL Temelleri 1</h2></header>
+				<article id="makale_1">
+					<h3 class="sub-heading">Query (Sorgu)</h3>
+					<p class="sub-item">SQL komutlarını içeren sorgu cümleleridir.</p>
+					<h3 class="sub-heading">SELECT (Seçme Operatörü)</h3>
+					<h4 class="sub-heading">SELECT Operatörünün Söz Dizimi:</h4>
+					<section class="code-container">
+						<code>
+							SELECT sütun_adi, sütun_adi, <br />
+							FROM tablo_adi;
+						</code>
+					</section>
+					<p class="sub-item">
+						Eğer tablodaki tüm sütunlardaki verileri çekmek istersek asteriks *
+						karakterinden faydalanırız.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * <br />
+							FROM tablo_adı;</code
+						>
+					</section>
+					<p class="sub-item">
+						NOT: SQL komutlarının büyük harf - küçük harf duyarlılıkları yoktur.
+						(Case Insensitive)
+					</p>
+					<p class="sub-item">Aşağıdaki sorguların hepsi aynı sonucu verir.</p>
+					<section class="code-container">
+						<code>
+							SELECT sütun_adı, sütun_adı, FROM tablo_adı; <br />select
+							sütun_adı, sütun_adı, from tablo_adı; <br />Select sütun_adı,
+							sütun_adı, From tablo_adı;<br />
+						</code>
+					</section>
+				</article>
+				<article id="makale_2">
+					<h3 class="sub-heading" id="where_ve_karsilastirma_operatorleri">
+						WHERE ve Karşılaştırma Operatörleri
+					</h3>
+					<h4 class="sub-heading">WHERE Operatörünün Söz Dizimi:</h4>
+					<section class="code-container">
+						<code>
+							SELECT sütun_adı, sütun_adı, <br />
+							FROM tablo_adı <br />
+							WHERE koşul;
+						</code>
+					</section>
+					<h4 class="sub-heading">WHERE Operatörünün Kullanımına Bir Örnek:</h4>
+					<section class="code-container">
+						<code>
+							SELECT title, replacement_cost <br />
+							FROM film <br />
+							WHERE replacement_cost = 14.99; <br />
+						</code>
+					</section>
+					<p class="sub-item">
+						<i
+							>Bu sorgumuzda <b>dvdrental </b> veritabanında bulunan
+							<b> film </b> tablosundaki <b> title </b> ve
+							<b> replacement_cost </b> sütunlarında bulunan verileri çekiyoruz
+							ancak bu kez tüm verileri değil
+							<b> replacement_cost = 14.99 </b> koşulunu sağlayan verileri
+							alıyoruz.</i
+						>
+					</p>
+					<h3 class="sub-heading" id="karsilastirma_operatorleri">
+						Karşılaştırma Operatörleri
+					</h3>
+					<img
+						src="https://www.bubitekno.com/wp-content/uploads/2015/07/karsilastirma-operat%C3%B6rleri.jpg"
+						alt="karsilastirma Operatorleri tablosu"
+					/>
+				</article>
+				<article id="makale_3">
+					<h3 class="sub-heading" id="where_ve_mantiksal_operatorler">
+						WHERE ve Mantıksal Operatörler
+					</h3>
+					<p class="sub-item">
+						Karşılaştırma operatörleri sayesinde koşulumuzu belirtiyorduk ancak
+						çoğu durumda biz birden fazla koşulu gerçekleştirme isteriz bunun
+						için mantıksal operatörlerden faydalanırız.
+					</p>
+					<h3 class="sub-heading" id="mantiksal_operatorler">
+						Mantıksal Operatörler
+					</h3>
+					<p class="sub-item">
+						Yukarıda da bahsettiğimiz üzere WHERE anahtar kelimesi koşul ile
+						birlikte çalışır. Aşağıda SQL ile birlikte kullanılan karşılaştırma
+						operatörlerini görebiliriz.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM actor <br />
+							WHERE first_name = 'Penelope' AND last_name = 'Monroe';
+						</code>
+					</section>
+					<p class="sub-item">
+						<i
+							>Bu sorgumuzda <b>dvdrental</b> veritabanında bulunan
+							<b>actor</b> tablosundaki tüm sütunlarında bulunan verileri
+							çekiyoruz ancak bu kez iki koşulumuz var. <b>AND</b> operatörünün
+							true sonucu dönmesi için bu iki koşulumuzun da sağlanması
+							gerekiyor. Sıralanacak verilerin <b>first_name</b> sütunundaki
+							değeri 'Penelope' ve <b>last_name </b> sütunundaki değerinin
+							'Monroe' olması gerekmektedir.</i
+						>
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM actor <br />
+							WHERE first_name = 'Penelope' OR first_name = 'Bob';
+						</code>
+					</section>
+					<p class="sub-item">
+						<i
+							>Bu sorgumuzda <b>dvdrental</b> veritabanında bulunan
+							<b>actor</b> tablosundaki tüm sütunlarında bulunan verileri
+							çekiyoruz ancak bu kez iki koşulumuz var. <b>OR</b> operatörünün
+							<b>true</b> sonucu dönmesi için bu iki koşulumuzunda herhangi
+							birinin sağlanması yeterlidir. Sıralanacak verilerin
+							<b>first_name</b> sütunundaki değeri 'Penelope' veya 'Bob' olması
+							gerekmektedir.</i
+						>
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM film <br />
+							WHERE NOT rental_rate = 4.99;</code
+						>
+					</section>
+					<p class="sub-item">
+						<i
+							>Bu sorgumuzda <b>dvdrental</b> veritabanında bulunan
+							<b>film</b> tablosundaki tüm sütunlarında bulunan verileri
+							çekiyoruz ancak bu kez koşulumuzu <b>NOT</b> yani değil mantıksal
+							operatörü yardımıyla oluşturmuşuz. NOT operatörü bize verilerin
+							hangi koşul dışı olduğunu gösterir.
+							<b
+								>Örneğimizin senaryosu; Film tablomuzda bulunan tüm sütunlardaki
+								verileri sıralayacağız ancak bu verilerin rental_rate sütununda
+								bulunan değerleri 4.99' a eşit OLMAYACAK!</b
+							></i
+						>
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM film <br />
+							WHERE NOT (rental_rate = 4.99 OR rental_rate = 2.99)
+						</code>
+					</section>
+					<p class="sub-item">
+						<i
+							>Mantıksal operatörleri sıklıkla birlikte kullanırız. Yukarıdaki
+							örneğimizde sıralayacağımız verilerin rental_rate sütunlarında
+							bulunan değerlerinin 4.99 veya 2.99 olmamasını istiyoruz.</i
+						>
+					</p>
+				</article>
+				<article id="makale_4">
+					<h3 class="sub-heading" id="between_in">BETWEEN ve IN</h3>
+					<h4 class="sub-heading" id="between">BETWEEN</h4>
+					<p class="sub-item">
+						Aşağıdaki sorgumuzda AND mantıksal operatörü yardımıyla film
+						tablosunda bulunan verilerimizi uzunluğu 140 tan küçük eşit VE 100
+						den büyük eşit olmak üzere sıralıyoruz.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * FROM film <br />
+							WHERE length <= 140 AND length >= 100;</code
+						>
+					</section>
+					<p class="sub-item">
+						Yukarıda temel olarak yaptığımız belirli aralıkta bulunan verileri
+						sıralamak. Bunu BETWEEN ... AND yapısını kullanarak da yapabiliriz.
+					</p>
+					<h5 class="sub-heading">BETWEEN AND kullanımına bir örnek:</h5>
+					<section class="code-container">
+						<code>
+							SELECT * FROM film <br />
+							WHERE length BETWEEN 100 AND 140; <br />
+							-- WHERE length >= 100 AND length <= 140 ifadesi ile aynı sonucu
+							verir.
+						</code>
+					</section>
+					<p class="sub-item">
+						DİPNOT: Burada dikkat edilmesi gereken nokta 100 ve 140 sınır
+						değerleri aralığa dahildir.
+					</p>
+				</article>
+				<article id="makale_5">
+					<h4 class="sub-heading" id="in">IN</h4>
+					<p class="sub-item">
+						Şöyle bir senaryo düşünelim, yine film tablosundan uzunluğu 30, 60,
+						90 veya 120 dakikaya eşit olan verileri sıralayalım.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * FROM film <br />
+							WHERE length = 30 OR length = 60 OR length = 90 OR length =
+							120;</code
+						>
+					</section>
+					<p class="sub-item">
+						<i
+							><b>OR</b> sorgusuyla verileri aldık ancak burada şöyle bir
+							sorunumuz var peki 4 farklı değer için değil 14 farklı değer için
+							bu sorgumuzu gerçekleştirmek için 14 ayrı OR mantıksal operatörü
+							kullanmamız gerekirdi. Bunun yerine istenilen değerleri liste
+							haline geitip <b>IN</b> anahtar kelimesiyle kullanabiliriz.</i
+						>
+					</p>
+					<h5 class="sub-heading">IN Operatörünün Söz Dizimi:</h5>
+					<section class="code-container">
+						<code>
+							SELECT sütun_adı, sütun_adı, FROM tablo_adı <br />
+							WHERE sütun_adı IN (değer1, değer2, ...);
+						</code>
+					</section>
+					<h5 class="sub-heading">IN Operatörünün Kullanımına Bir Örnek:</h5>
+					<section class="code-container">
+						<code>
+							SELECT * FROM film <br />
+							WHERE length IN (30, 60, 90, 120);
+						</code>
+					</section>
+				</article>
+				<article id="makale_6">
+					<h3 class="sub-heading" id="like_ilike">LIKE ve ILIKE</h3>
+					<p class="sub-item">
+						Aşağıdaki sorgumuzda actor tablomuzda bulunan tüm sütunlardaki
+						verileri first_name sütununda ki değeri 'Penelope' olmak üzere
+						getiriyoruz.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * FROM actor <br />
+							WHERE first_name = 'Penelope';</code
+						>
+					</section>
+					<p class="sub-item">
+						Ancak bizler bazı durumlarda bu şekilde tam eşleşme değil belirli
+						şablonlara uyan koşulların sağlanmasını isteriz. Örneğin aşağıdaki
+						sorgumuzda first_name sütunun 'Penelope' değerine eşit olmasını
+						değil, ilk harfin 'P' olması koşulunu sağlar. Bunun için
+						<b>LIKE</b> operatörünü kullanırız.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * FROM actor <br />
+							WHERE first_name LIKE 'P%';</code
+						>
+					</section>
+					<p class="sub-item">
+						<i
+							>Burada kullanılan <b> %</b> karakteri sıfır, bir veya daha fazla
+							karakteri temsil eder ve Wildcard olarak isimlendirilir. Bir diğer
+							<b>wildcard</b> karakteri <b> _</b> karakteridir ve bir karakteri
+							temsil eder.</i
+						>
+					</p>
+					<p class="sub-item">
+						DİPNOT: ILIKE operatörü LIKE operatörünün case - insensitive
+						versiyonudur.
+						<br />
+						<code>LIKE = ~~ ve ILIKE = ~~*</code>
+					</p>
+				</article>
+				<article id="makale_7">
+					<h3 class="sub-heading" id="distinct_count">DISTINCT ve COUNT</h3>
+					<h4 class="sub-heading" id="distinct">DISTINCT</h4>
+					<p class="sub-item">
+						Şimdiye kadar yaptığımız SQL sorgularında genellikle verileri
+						belirli koşullar altında sıraladık. Dikkat ettiyseniz bir çok
+						durumda aynı sütün içerisinde birbirinin aynı olan veriler ile
+						karşılaştık. Örneğin dvdrental veritabanı içerisinde bulunan film
+						tablosundaki replacement_cost, rental_rate gibi sütunlar birbirini
+						tekrar eden verilerden oluşmaktadır. Bazı durumlarda bir sütun
+						içerisinde bulunan farklı değerleri görmek isteriz.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT DISTINCT rental_rate <br />
+							FROM film;
+						</code>
+					</section>
+					<p class="sub-item">
+						<i
+							>Yukarıdaki DISTINCT sorgusu bize rental_rate sütununda bulunan
+							birinden farklı 2.99, 0.99, 4.99 verilerini gösterir.</i
+						>
+					</p>
+					<h5 class="sub-heading">SELECT DISTINCT kullanımına bir örnek:</h5>
+					<section class="code-container">
+						<code>
+							SELECT DISTINCT sütun_adı, sütun_adı, <br />
+							FROM tablo_adı;
+						</code>
+					</section>
+				</article>
+				<article id="makale_8">
+					<h4 class="sub-heading" id="count">COUNT</h4>
+					<p class="sub-item">
+						<b
+							>COUNT aggregate fonksiyonu ilgili sorgu sonucunda oluşan veri
+							sayısını bildirir.</b
+						>
+					</p>
+					<p class="sub-item">
+						Aşağıdaki sorguda ismi 'Penelope' olan aktörleri sıralıyoruz.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM actor <br />
+							WHERE first_name = 'Penelope';
+						</code>
+					</section>
+					<p class="sub-item">
+						Ancak veri sayısını bulmak istersek COUNT fonksiyonunu kullanırız.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT COUNT(*) <br />
+							FROM actor <br />
+							WHERE first_name = 'Penelope';
+						</code>
+					</section>
+					<p class="sub-item">
+						Yukarıda da belirttiğimiz gibi COUNT fonksiyonu ile sorgu sonucunda
+						ortaya verileri sayıyoruz. Bu nedenle COUNT(*) veya COUNT(sütun_adı)
+						aynı sonucu verir.
+					</p>
+				</article>
+			</section>
+			<section class="main-section" id="SQL_Temelleri_2">
+				<header><h2 class="top-heading">SQL Temelleri 2</h2></header>
+				<article id="makale_9">
+					<h3 class="sub-heading">ORDER BY</h3>
+					<p class="sub-item">
+						ORDER BY anahtar kelimesi sayesinde bizler verilerimizi herhangi bir
+						sütunda bulunan değerlere göre azalan veya artan bir şekilde
+						sıralayabiliriz.
+					</p>
+					<h4 class="sub-heading">ORDER BY Anahtar Kelimesinin Söz Dizimi:</h4>
+					<section class="code-container">
+						<code
+							>SELECT sütün_adı1, sütun_adi2 <br />
+							FROM tablo_adi <br />
+							ORDER BY sütun_adi1, sütun_adi2, ASC | DESC;
+						</code>
+					</section>
+					<h4 class="sub-heading">
+						ORDER BY Anahtar Kelimesinin Örnek Kullanımı:
+					</h4>
+					<section class="code-container">
+						<code
+							>SELECT * <br />
+							FROM film <br />
+							ORDER BY title (ASC);</code
+						>
+					</section>
+					<p class="sub-item">
+						Bu sorgumuzda <b>dvdrental</b> veritabanında bulunan
+						<b>film</b> tablosundaki tüm sütunları <b>title</b> sütununda
+						bulunan verilere göre artan (ASC) şeklinde sıralıyoruz. ASC sıralama
+						varsayılan olduğu için ayrı bir şekilde yazılması zorunluluğu yoktur
+						ancak sorguyu belirginleştirmesi açısından genelde yazılır.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * <br />
+							FROM film <br />
+							ORDER BR title ASC length DESC;</code
+						>
+					</section>
+					<p class="sub-item">
+						Sıralama birden fazla sütuna göre de yapılabilir. Yukarıdaki
+						örneğimizde sıralama title sütununa göre artan length sütununa göre
+						azalan şeklinde yapılıyor.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * <br />
+							FROM film <br />WHERE title LIKE 'A%' <br />
+							ORDER BY title ASC length DESC;
+						</code>
+					</section>
+					<p class="sub-item">
+						Yukarıdaki örneğimizde de gördüğümüz gibi sıralama işlemi, koşuldan
+						sonra yazılır.
+					</p>
+				</article>
+				<article id="makale_10">
+					<h3 class="sub-heading" id="limit_offset">LIMIT ve OFFSET</h3>
+					<h4 class="sub-heading" id="limit">LIMIT</h4>
+					<p class="sub-item">
+						Şimdiye kadar yaptığımız SQL sorgularında genellikle verilerin
+						tamamını belirli koşullar altında sıraladık. Bazı durumlarda ise
+						koşullarımızı sağlayan verilerin tamamını değil belirli sayıda
+						olanlarını sıralamak isteriz, bunun için <b>LIMIT</b> anahtar
+						kelimesini kullanırız. Şöyle bir senaryo üzerine düşünelim.
+						<b>dvdrental</b> veritabanında bulunan <b>film</b> tablosundan B ile
+						başlayan filmleri uzunluklarına göre en uzun olan 10 filmi
+						sıralayalım.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT * FROM title <br />
+							WHERE title LIKE 'B%' <br />
+							ORDER BY length DESC <br />
+							LIMIT 10;
+						</code>
+					</section>
+					<p class="sub-item">
+						Yukarıdaki sorgumuzda da görmüş olduğumuz gibi önce koşullamayı,
+						sonra gruplamayı en son ise LIMIT kullanarak istediğimiz veri
+						sayısını belirttik.
+					</p>
+					<h4 class="sub-heading" id="offset">OFFSET</h4>
+					<p class="sub-item">
+						Bazı durumlarda sonuç olarak gördüğümüz veri grubu içerisinden
+						bazılarını "pass" geçmek isteriz. Yukarıdaki senaryomuzu tekrar
+						düşünelim, dvdrental veritabanında bulunan film tablosundan B ile
+						başlayan filmleri uzunluklarına göre sıralayalım ancak en uzun 6
+						filmi "pass" geçelim ve sonrasındaki 4 filmi sıralayalım. Bu durumda
+						LIMIT 4 ve OFFSET 6 olacak.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT * FROM film <br />
+							WHERE title LIKE 'B%' <br />
+							ORDER BY length DESC <br />
+							OFFSET 6 <br />
+							LIMIT 4 <br />
+						</code>
+					</section>
+				</article>
+				<article id="makale_11">
+					<h3 class="sub-heading">Aggregate Fonksiyonlar</h3>
+					<p class="sub-item">
+						Aggregate fonksiyonları yardımıyla bizler veri kümelerimizden
+						sonuçlar çıkarabiliriz. <br />
+						Şu senaryoları düşünelim:
+					</p>
+					<ul class="sub-item">
+						<li>Toplam kaç adet müşterimiz var?</li>
+						<li>Elimizde bulunan filmlerin ortalama uzunluğu nedir?</li>
+					</ul>
+					<p class="sub-item">
+						Bu şekilde belirli veri kümelerinden tek bir sonuç çıkarmak için
+						aggregate fonksiyonları kullanırız. <br />
+					</p>
+					<p class="sub-item">
+						AVG fonksiyonunu kullandığımız sayısal değerlerden oluşan sütunun
+						ortalama değerini alırız.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT AVG(length) <br />
+							FROM film;</code
+						>
+					</section>
+					<p class="sub-item">
+						Yukarıdaki sorgu sayesinde film tablosunda bulunan length
+						sütunundaki değerlerin ortalamasını alırız. SUM fonksiyonunu
+						kullandığımız sayısal değerlerden oluşan sütunun toplam değerini
+						alırız.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT SUM(length) <br />
+							FROM film;
+						</code>
+					</section>
+					<p class="sub-item">
+						Yukarıdaki sorgu sayesinde film tablosunda bulunan length
+						sütunundaki değerlerin toplamını alırız. MAX fonksiyonunu
+						kullandığımız sayısal değerlerden oluşan sütunun en yüksek değerini
+						alırız.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT MIN(length) <br />
+							FROM film;</code
+						>
+					</section>
+					<p class="sub-item">
+						Yukarıdaki sorgu sayesinde film tablosunda bulunan length
+						sütunundaki değerlerin en düşük değerini alırız.
+					</p>
+				</article>
+				<article id="makale_12">
+					<h4 class="sub-heading" id="group_by">GROUP BY</h4>
+					<p class="sub-item">
+						Bizler şimdiye kadar olan sorgularımızın tamamında sorguları
+						yaparken genel veri kümesinin tamamı üzerine düşündük, ancak bazı
+						durumlarda aynı sonuçları veri kümesinin içerisinde bulunan farklı
+						gruplarda da bulmak isteyebiliriz.
+					</p>
+					<p class="sub-item">
+						Senaryomuzu şu şekilde düşünelim, dvdrental veritabanında
+						rental_rate sütununda bizim 3 farklı değerimiz var (0.99, 2.99,
+						4.99). Biz bu 3 farklı değer için en uzun filmi bulmaya çalışalım.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT MAX(length) FROM film <br />
+							WHERE rental_rate = 0.99; <br />
+							<br />
+							SELECT MAX(length) FROM film <br />
+							WHERE rental_rate = 2.99; <br />
+							<br />
+							SELECT MAX(length) FROM film <br />
+							WHERE rental_rate = 4.99;
+						</code>
+					</section>
+					<p class="sub-item">
+						İstediğimiz sonuçları elde ediyoruz ancak şöyle bir sorunumuz var 3
+						farklı değer yerine 30 farklı değer olsaydı? İşte bu şekilde
+						senaryolar için yani verileri gruplama için GROUP BY anahtar
+						kelimesi kullanılır.
+					</p>
+					<h4 class="sub-heading">GROUP BY anahtar kelimesinin söz dizimi:</h4>
+					<section class="code-container">
+						<code>
+							SELECT sütun_adı1, sütun_adı2, (veya aggregate fonksiyon) FROM
+							tablo_adi <br />
+							GROUP BY sütun_adi1, sütun_adi2;
+						</code>
+					</section>
+					<p class="sub-item">
+						<b
+							><i
+								>Burada şuna dikkat etmemiz gerekir, SELECT anahtar kelimesinde
+								bulunan sütunların GROUP BY anahtar kelimesi içerisinde
+								bulunması gerekir.</i
+							></b
+						>
+					</p>
+					<h4 class="sub-heading">
+						GROUP BY anahtar kelimesinin kullanımına bir örnek:
+					</h4>
+					<p class="sub-item">
+						Burada şuna dikkat etmemiz gerekir, SELECT anahtar kelimesinde
+						bulunan sütunların GROUP BY anahtar kelimesi içerisinde bulunması
+						gerekir.
+					</p>
+					<section class="code-container">
+						<code
+							>SELECT rental_date, MAX(length) FROM film <br />
+							GROUP BY rental_date;
+						</code>
+					</section>
+				</article>
+				<article id="makale_13">
+					<h3 class="sub-heading" id="having">HAVING</h3>
+					<p class="sub-item">
+						<b>HAVING</b> anahtar kelimesi sayesinde gruplandırılmış verilere
+						koşullar ekleyebiliriz. Hemen aklımıza <b>WHERE</b> anahtar kelimesi
+						geldi değil mi? Ancak WHERE anahtar kelimesi ile biz satır bazlı
+						koşullar verebiliyoruz.
+					</p>
+					<p class="sub-item">
+						Şöyle bir senaryomuz olsun. Her bir rental_rate oranına karşılık
+						gelen film sayısını bulalım. Bunu GROUP BY ile gerçekleştirebiliriz.
+						Ancak bu kez 1 adım öteye gidip şöyle bir koşul ekleyelim toplam
+						film sayısı 325 ten fazla olan rental_rate oranlarını görelim. Bu
+						durumda GROUP BY ile elde ettiğimiz toplam film sayılarına koşul
+						eklememiz gerekir.
+					</p>
+					<section class="code-container">
+						<code>
+							SELECT rental_date, COUNT(*) FROM film <br />
+							GROUP BY rental_date <br />
+							HAVING COUNT (*) > 325;</code
+						>
+					</section>
+				</article>
+				<article id="makale_14">
+					<h3 class="sub-heading" id="alias">ALIAS</h3>
+					<h4 class="sub-heading" id="alias_as">ALIAS (AS)</h4>
+					<p class="sub-item">
+						<b>AS</b> anahtar kelimesi sayesinde sorgular sonucu oluşturduğumuz
+						sanal tablo ve sütunlara geçici isimler verebiliriz.
+					</p>
+					<h5 class="sub-heading">ALIAS SÜTUN KULLANIMI</h5>
+					<section class="code-container">
+						<code
+							>SELECT sütun_adı AS gecici_ad <br />
+							FROM tablo_adı;</code
+						>
+					</section>
+					<h5 class="sub-heading">ALIAS TABLO KULLANIMI:</h5>
+					<section class="code-container">
+						<code
+							>SELECT sütun_adı, sütun_adı <br />
+							FROM tablo_adı AS gecici_ad;</code
+						>
+					</section>
+				</article>
+			</section>
+			<footer>
+				Challenged by &nbsp;
+				<a
+					href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+					target="_blank"
+				>
+					freeCodeCamp </a
+				>&nbsp; Coded by &nbsp;
+				<a
+					href="https://github.com/selimbiber/Responsive-Web-Design-Certification"
+					title="GitHub: selimbiber"
+					target="_blank"
+					>Selim Biber</a
+				>
+			</footer>
+		</main>
+	</body>
+</html>
