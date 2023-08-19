@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Product Landing Page</title>
+	</head>
+	<body id="page">
+		<header id="header">
+			<figure>
+				<img
+					src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+					alt="homepage logo"
+					id="header-img"
+				/>
+			</figure>
+			<nav id="nav-bar">
+				<ul id="nav-bar_links-list">
+					<li>
+						<a href="#hero-section" class="nav-link">Features</a>
+					</li>
+					<li><a href="#video" class="nav-link">How It Works</a></li>
+					<li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="container">
+			<form
+				action="https://www.freecodecamp.com/email-submit"
+				method="get"
+				id="form"
+			>
+				<fieldset>
+					<legend><h1>Handcrafted, home-made masterpieces</h1></legend>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter your email address"
+					/>
+					<input type="submit" value="Get Started" id="submit" />
+				</fieldset>
+			</form>
+			<section id="hero-section">
+				<ul id="hero-section_list-items">
+					<li class="list-item">
+						<figure>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/70/70535.png"
+								alt=""
+								class="list-item_figure-img"
+							/>
+						</figure>
+						<ul class="sub-list">
+							<li><h2 class="sub-list_heading">Premium Materials</h2></li>
+							<li>
+								<p class="sub-list_text">
+									Our trombones use the shiniest brass which is sourced locally.
+									This will increase the longevity of your purchase.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="list-item">
+						<figure>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/4212/4212257.png"
+								alt=""
+								class="list-item_figure-img"
+							/>
+						</figure>
+						<ul class="sub-list">
+							<li><h2 class="sub-list_heading">Fast Shipping</h2></li>
+							<li>
+								<p class="sub-list_text">
+									We make sure you recieve your trombone as soon as we have
+									finished making it. We also provide free returns if you are
+									not satisfied.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="list-item">
+						<figure>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/2649/2649798.png"
+								alt=""
+								class="list-item_figure-img"
+							/>
+						</figure>
+						<ul class="sub-list">
+							<li><h2 class="sub-list_heading">Quality Assurance</h2></li>
+							<li>
+								<p class="sub-list_text">
+									For every purchase you make, we will ensure there are no
+									damages or faults and we will check and test the pitch of your
+									instrument.
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section id="video-section">
+				<iframe
+					id="video"
+					src="https://www.youtube.com/embed/vTDEVUlCClk"
+					title="Epic Low Brass Game of Thrones Theme (Cover)"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</section>
+			<section id="pricing-section">
+				<ul id="pricing_section-card-items">
+					<li class="card-item">
+						<h3 class="card-heading">TENOR TROMBONE</h3>
+						<strong class="price">$600</strong>
+						<ul class="card-text">
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum.</li>
+							<li>Lorem</li>
+						</ul>
+						<button class="select-btn">SELECT</button>
+					</li>
+					<li class="card-item">
+						<h3 class="card-heading">BASS TROMBONE</h3>
+						<strong class="price">$900</strong>
+						<ul class="card-text">
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum.</li>
+							<li>Lorem</li>
+						</ul>
+						<button class="select-btn">SELECT</button>
+					</li>
+					<li class="card-item">
+						<h3 class="card-heading">VALVE TROMBONE</h3>
+						<strong class="price">$1200</strong>
+						<ul class="card-text">
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum.</li>
+							<li>Lorem</li>
+						</ul>
+						<button class="select-btn">SELECT</button>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="footer">
+			<ul>
+				<li class="footer_list-items"><a href="#">Privacy</a></li>
+				<li class="footer_list-items"><a href="#">Terms</a></li>
+				<li class="footer_list-items"><a href="#">Contact</a></li>
+			</ul>
+			<p id="copyright-text">Copyright 2023, Original Trombones</p>
+		</footer>
+	</body>
+</html>
