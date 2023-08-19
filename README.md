@@ -22,6 +22,8 @@ Finally, you'll learn how to make webpages that respond to different screen size
 ### [Preview for Training Project-13: Learn CSS Grid by Building a Magazine](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/CSS-Grid-Magazine/index.html)
 
 ## freeCodeCamp.org Portfolio Projects;
-### [Preview for Portfolio Project-1: SurveyForm](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
-### [Preview for Portfolio Project-2: TributePage](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/TributePage/index.html)
-### [Preview for Portfolio Project-3: TechnicalDocumentationPage](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/TechnicalDocumentationPage/index.html#SQL_(Structured_Query_Language)_nedir?)
+### [Preview for Portfolio Project-1: Survey Form](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/SurveyForm/index.html)
+### [Preview for Portfolio Project-2: Tribute Page](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/TributePage/index.html)
+### [Preview for Portfolio Project-3: Technical Documentation Page](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/TechnicalDocumentationPage/index.html)
+### [Preview for Portfolio Project-4: Product Landing Page](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/ProductLandingPage/index.html)
+
