@@ -35,3 +35,7 @@ Finally, you'll learn how to make webpages that respond to different screen size
 
 ## [Thank You freeCodeCamp!](https://www.freecodecamp.org/certification/selimbiber/responsive-web-design)
 ![responsive-web-design-certification](https://github.com/selimbiber/Responsive-Web-Design-Certification/assets/117529414/a6d20daa-56ad-436d-a314-91f90c80d6c3)
+
+## [Thank You My CSS Master!](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts/)
+![conquering-responsive-layouts-certificate](https://github.com/selimbiber/Responsive-Web-Design-Certification/assets/117529414/ee2dba55-f818-4d71-85dd-128de02a036e)
+
