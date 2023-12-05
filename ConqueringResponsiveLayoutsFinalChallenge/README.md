@@ -4,6 +4,12 @@
 
 I made this project for the final challenge of Kevin Powell's great course Conquering Responsive Layouts.
 
-### Preview Image
+### Expected Design
 
-### [Preview Link]()
+[final-challenge-specs.pdf](https://github.com/selimbiber/Responsive-Web-Design-Certification/files/13558433/final-challenge-specs.pdf)
+
+### My Design
+
+![ConqueringResponsiveLayoutsFinalChallenge_preview-img](https://github.com/selimbiber/Responsive-Web-Design-Certification/assets/117529414/354893b7-3b97-4e88-a148-daa8441720cc)
+
+### [Preview Link](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/ConqueringResponsiveLayoutsFinalChallenge/index.html)
