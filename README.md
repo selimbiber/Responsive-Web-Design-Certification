@@ -32,6 +32,8 @@ Finally, you'll learn how to make webpages that respond to different screen size
 ### [Preview for Portfolio Project-4: Product Landing Page](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/ProductLandingPage/index.html)
 ### [Preview for Portfolio Project-5: Personal Portfolio Page](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/PersonalPortfolioWebpage/index.html)
 ---
+## [Conquering Responsive Layouts Final Challenge](https://htmlpreview.github.io/?https://github.com/selimbiber/Responsive-Web-Design-Certification/blob/main/ConqueringResponsiveLayoutsFinalChallenge/index.html)
+---
 
 ## [Thank You freeCodeCamp!](https://www.freecodecamp.org/certification/selimbiber/responsive-web-design)
 ![responsive-web-design-certification](https://github.com/selimbiber/Responsive-Web-Design-Certification/assets/117529414/a6d20daa-56ad-436d-a314-91f90c80d6c3)
