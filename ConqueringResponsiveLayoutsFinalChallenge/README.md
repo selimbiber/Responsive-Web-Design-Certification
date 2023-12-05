@@ -6,7 +6,7 @@ I made this project for the final challenge of Kevin Powell's great course Conqu
 
 ### Expected Design
 
-[final-challenge-specs.pdf](https://github.com/selimbiber/Responsive-Web-Design-Certification/files/13558433/final-challenge-specs.pdf)
+![expected-design_final-challenge](https://github.com/selimbiber/Responsive-Web-Design-Certification/assets/117529414/95a384a8-20f6-4a58-963d-ef2a8f349d37)
 
 ### My Design
 
